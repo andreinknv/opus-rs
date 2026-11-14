@@ -1,0 +1,83 @@
+== diff-celt-fb-2.5ms-quiet.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=e7 len=  81 rust=Ok(120) c=120 range r=110d6a00 c=110d6a00 vs clamped libopus 124.1 dB, peak rs 0.000 c 0.000
+ 1 decode n= 5760 toc=e5 len= 153 rust=Ok(240) c=240 range r=02baf000 c=02baf000 vs clamped libopus 124.6 dB, peak rs 0.000 c 0.000
+ 2 decode n= 5760 toc=e7 len= 982 rust=Ok(120) c=120 range r=025b3000 c=025b3000 vs clamped libopus 125.1 dB, peak rs 0.000 c 0.000
+ 3 fec    n=  240 toc=e7 len= 235 rust=Ok(240) c=240 range r=00000000 c=00000000 vs clamped libopus -2.8 dB, peak rs 0.000 c 0.000
+ 4 decode n= 5760 toc=e7 len=  81 rust=Ok(120) c=120 range r=244cea00 c=244cea00 vs clamped libopus -1.5 dB, peak rs 0.000 c 0.000
+ 5 decode n= 5760 toc=e7 len= 233 rust=Ok(360) c=360 range r=00cbfa03 c=00cbfa03 vs clamped libopus 92.1 dB, peak rs 0.000 c 0.000
+ 6 decode n= 5760 toc=e7 len= 389 rust=Ok(600) c=600 range r=01000000 c=01000000 vs clamped libopus 24.8 dB, peak rs 0.001 c 0.001
+ 7 decode n= 5760 toc=ea len=1309 rust=Ok(480) c=480 range r=45b25c00 c=45b25c00 vs clamped libopus 123.8 dB, peak rs 1.000 c 2.056
+== diff-celt-swb-20ms-steady.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=de len= 158 rust=Ok(1920) c=1920 range r=09ec3f00 c=09ec3f00 vs clamped libopus 44.7 dB, peak rs 0.266 c 0.266
+ 1 decode n= 5760 toc=de len= 162 rust=Ok(1920) c=1920 range r=00f56b00 c=00f56b00 vs clamped libopus 40.7 dB, peak rs 0.090 c 0.090
+ 2 decode n= 5760 toc=de len= 105 rust=Ok(1920) c=1920 range r=13053100 c=13053100 vs clamped libopus 47.8 dB, peak rs 0.057 c 0.057
+ 3 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus 9.7 dB, peak rs 0.043 c 0.043
+ 4 decode n= 5760 toc=de len= 122 rust=Ok(1920) c=1920 range r=55726600 c=55726600 vs clamped libopus 20.3 dB, peak rs 0.046 c 0.048
+ 5 decode n= 5760 toc=de len= 142 rust=Ok(1920) c=1920 range r=02574b00 c=02574b00 vs clamped libopus 12.9 dB, peak rs 0.050 c 0.050
+ 6 decode n= 5760 toc=de len= 128 rust=Ok(1920) c=1920 range r=082b9e00 c=082b9e00 vs clamped libopus 18.5 dB, peak rs 0.074 c 0.075
+ 7 lost   n= 2880 toc=-- len=   0 rust=Ok(2880) c=2880 range r=00000000 c=00000000 vs clamped libopus -3.3 dB, peak rs 0.072 c 0.071
+ 8 lost   n=  480 toc=-- len=   0 rust=Ok(480) c=480 range r=00000000 c=00000000 vs clamped libopus -3.9 dB, peak rs 0.043 c 0.027
+ 9 decode n= 5760 toc=de len= 112 rust=Ok(1920) c=1920 range r=2bdc6500 c=2bdc6500 vs clamped libopus 4.7 dB, peak rs 0.015 c 0.018
+10 decode n= 5760 toc=de len=  99 rust=Ok(1920) c=1920 range r=62bb2800 c=62bb2800 vs clamped libopus 27.7 dB, peak rs 0.006 c 0.006
+11 decode n= 5760 toc=de len= 123 rust=Ok(1920) c=1920 range r=217b3a00 c=217b3a00 vs clamped libopus 16.0 dB, peak rs 0.005 c 0.006
+== diff-celt-to-silk-switch.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=58 len=  38 rust=Ok(2880) c=2880 range r=01b6ce77 c=01b6ce77 vs clamped libopus 254.4 dB, peak rs 0.000 c 0.000
+ 1 decode n= 5760 toc=58 len=  43 rust=Ok(2880) c=2880 range r=05fa9131 c=05fa9131 vs clamped libopus 263.0 dB, peak rs 0.001 c 0.001
+ 2 decode n= 5760 toc=58 len=  80 rust=Ok(2880) c=2880 range r=380afa7f c=380afa7f vs clamped libopus 322.5 dB, peak rs 1.000 c 1.000
+ 3 fec    n= 1920 toc=58 len=  70 rust=Ok(1920) c=1920 range r=00000000 c=00000000 vs clamped libopus 319.2 dB, peak rs 0.975 c 0.975
+ 4 fec    n=  480 toc=58 len=  74 rust=Ok(480) c=480 range r=00000000 c=00000000 vs clamped libopus 280.4 dB, peak rs 0.007 c 0.007
+ 5 fec    n= 1920 toc=51 len=  81 rust=Ok(1920) c=1920 range r=10000000 c=10000000 vs clamped libopus 282.9 dB, peak rs 0.006 c 0.006
+ 6 fec    n= 1920 toc=51 len=  81 rust=Ok(1920) c=1920 range r=10000000 c=10000000 vs clamped libopus 278.8 dB, peak rs 0.004 c 0.004
+ 7 decode n= 5760 toc=d7 len=  63 rust=Err("Code 3 CBR: payload not divisible by frame count") c=-4 range r=10000000 c=10000000 
+ 8 decode n= 5760 toc=80 len=  27 rust=Ok(120) c=120 range r=1328b300 c=1328b300 vs clamped libopus 10.6 dB, peak rs 0.012 c 0.012
+ 9 decode n= 5760 toc=42 len= 290 rust=Ok(960) c=960 range r=669ddc16 c=669ddc16 vs clamped libopus 1.6 dB, peak rs 0.020 c 0.020
+== diff-fec-after-hybrid.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=e7 len= 431 rust=Ok(600) c=600 range r=368a9200 c=368a9200 vs clamped libopus 122.8 dB, peak rs 0.000 c 0.000
+ 1 fec    n=  120 toc=5f len=  48 rust=Err("Code 3: padding exceeds packet") c=-4 range r=368a9200 c=368a9200 
+ 2 decode n= 5760 toc=59 len=  28 rust=Err("Code 1: payload length must be even") c=-4 range r=368a9200 c=368a9200 
+ 3 decode n= 5760 toc=68 len=  89 rust=Ok(960) c=960 range r=06874b00 c=06874b00 vs clamped libopus 66.8 dB, peak rs 0.319 c 0.319
+ 4 decode n= 5760 toc=ca len=  10 rust=Err("Code 2: first frame size exceeds packet") c=-4 range r=06874b00 c=06874b00 
+ 5 fec    n= 2880 toc=38 len=  68 rust=Ok(2880) c=2880 range r=08000000 c=08000000 vs clamped libopus 5.5 dB, peak rs 0.003 c 0.003
+ 6 decode n= 5760 toc=62 len= 124 rust=Err("Code 2: first frame size exceeds packet") c=-4 range r=08000000 c=08000000 
+ 7 decode n= 5760 toc=d4 len=1500 rust=Ok(480) c=-4 range r=07fa9100 c=08000000 
+ 8 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -inf dB, peak rs 0.087 c 0.000
+ 9 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -inf dB, peak rs 0.067 c 0.000
+10 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -inf dB, peak rs 0.050 c 0.000
+11 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -inf dB, peak rs 0.070 c 0.000
+12 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -inf dB, peak rs 0.037 c 0.000
+== diff-hybrid-to-celt-switch.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=78 len=  45 rust=Ok(960) c=960 range r=4a25b500 c=4a25b500 vs clamped libopus 125.7 dB, peak rs 0.000 c 0.000
+ 1 decode n= 5760 toc=78 len=  58 rust=Ok(960) c=960 range r=01d10200 c=01d10200 vs clamped libopus 155.2 dB, peak rs 0.012 c 0.012
+ 2 decode n= 5760 toc=f5 len= 553 rust=Ok(960) c=960 range r=009097d5 c=009097d5 vs clamped libopus 20.5 dB, peak rs 0.172 c 0.172
+== diff-loss-after-hybrid.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=20 len=  51 rust=Ok(480) c=480 range r=67e3e100 c=67e3e100 vs clamped libopus 257.5 dB, peak rs 0.001 c 0.001
+ 1 decode n= 5760 toc=20 len=  50 rust=Ok(480) c=480 range r=0103340a c=0103340a vs clamped libopus 260.2 dB, peak rs 0.001 c 0.001
+ 2 decode n= 5760 toc=20 len=  56 rust=Ok(480) c=480 range r=02f2ccaa c=02f2ccaa vs clamped libopus 263.8 dB, peak rs 0.002 c 0.002
+ 3 decode n= 5760 toc=20 len=  61 rust=Ok(480) c=480 range r=137f3b5c c=137f3b5c vs clamped libopus 265.2 dB, peak rs 0.002 c 0.002
+ 4 decode n= 5760 toc=20 len=  58 rust=Ok(480) c=480 range r=0a5fa022 c=0a5fa022 vs clamped libopus 144.5 dB, peak rs 0.294 c 0.294
+ 5 decode n= 5760 toc=3f len= 123 rust=Err("Code 3: invalid frame count") c=-4 range r=0a5fa022 c=0a5fa022 
+ 6 decode n= 5760 toc=78 len= 106 rust=Ok(960) c=960 range r=24ce7400 c=24ce7400 vs clamped libopus 136.0 dB, peak rs 0.241 c 0.241
+ 7 decode n= 5760 toc=5b len=  53 rust=Err("Code 3: padding exceeds packet") c=-4 range r=24ce7400 c=24ce7400 
+ 8 decode n= 5760 toc=e7 len=  73 rust=Err("Code 3: padding exceeds packet") c=-4 range r=24ce7400 c=24ce7400 
+ 9 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus 1.4 dB, peak rs 0.002 c 0.003
+10 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -0.1 dB, peak rs 0.002 c 0.002
+11 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -2.9 dB, peak rs 0.002 c 0.002
+12 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -3.6 dB, peak rs 0.002 c 0.002
+== diff-silk-wb-40ms-steady.bin
+rate 48000 channels 1
+ 0 decode n= 5760 toc=34 len= 197 rust=Ok(1920) c=1920 range r=033ee4d9 c=033ee4d9 vs clamped libopus 285.8 dB, peak rs 0.011 c 0.011
+ 1 decode n= 5760 toc=34 len= 189 rust=Ok(1920) c=1920 range r=012ccff0 c=012ccff0 vs clamped libopus 289.4 dB, peak rs 0.028 c 0.028
+ 2 decode n= 5760 toc=34 len= 228 rust=Ok(1920) c=1920 range r=6b48d453 c=6b48d453 vs clamped libopus 296.5 dB, peak rs 0.046 c 0.046
+ 3 decode n= 5760 toc=34 len= 146 rust=Ok(1920) c=1920 range r=021e800b c=021e800b vs clamped libopus 289.2 dB, peak rs 0.017 c 0.017
+ 4 decode n= 5760 toc=34 len= 221 rust=Ok(1920) c=1920 range r=3cff4ce0 c=3cff4ce0 vs clamped libopus 281.7 dB, peak rs 0.012 c 0.012
+ 5 decode n= 5760 toc=34 len= 269 rust=Ok(1920) c=1920 range r=07e414fe c=07e414fe vs clamped libopus 301.4 dB, peak rs 0.070 c 0.070
+ 6 decode n= 5760 toc=34 len= 213 rust=Ok(1920) c=1920 range r=424d0300 c=424d0300 vs clamped libopus 43.6 dB, peak rs 0.063 c 0.063
+ 7 decode n= 5760 toc=2d len=  30 rust=Err("Code 1: payload length must be even") c=-4 range r=424d0300 c=424d0300 
+ 8 lost   n=  120 toc=-- len=   0 rust=Ok(120) c=120 range r=00000000 c=00000000 vs clamped libopus -1.5 dB, peak rs 0.011 c 0.025
+ 9 decode n= 5760 toc=1c len= 201 rust=Ok(2880) c=2880 range r=36c146df c=36c146df vs clamped libopus 13.6 dB, peak rs 1.000 c 1.000
